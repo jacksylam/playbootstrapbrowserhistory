@@ -32,10 +32,10 @@
         </div>
         <div class="collapse navbar-collapse">
           <ul class="nav navbar-nav">
-            <li><a href="#Intro">Introduction</a></li>
-            <li><a href="#IE">Internet Explorer</a></li>
-            <li><a href="#Firefox">Firefox</a></li>
-            <li><a href="#Chrome">Chrome</a></li>
+            <li class="@("active".when(page == "Introduction"))"><a href="@routes.Application.index()">Introduction</a></li>
+            <li class="@("active".when(page == "Internet Explorer"))"><a href="@routes.Application.internetExplorer()">Internet Explorer</a></li>
+            <li class="@("active".when(page == "Firefox"))"><a href="@routes.Application.firefox()">Firefox</a></li>
+            <li class="@("active".when(page == "Chrome"))"><a href="@routes.Application.chrome()">Chrome</a></li>
           </ul>
         </div>
       </div>
